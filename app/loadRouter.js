@@ -16,7 +16,7 @@ const addController = (router, controller) => {
 const loadController = (router, rootPath) => {
   const path = rootPath + '/routes';
   fs.readdirSync(path).map((dir) => {
-    console.log(dir, 16);
+    // console.log(dir, 16);
     fs.readdirSync(`${path}/${dir}`).map((controllerItem) => {
       let controller = require(`${path}/${dir}/${controllerItem}`);
       addController(router, controller);

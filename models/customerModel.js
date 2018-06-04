@@ -1,4 +1,4 @@
-const {mongoose, db} = require('../app/db');
+const {mongoose, db} = require('../mongodb/db');
 
 console.log('模型内连接数据库');
 
